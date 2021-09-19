@@ -1,0 +1,76 @@
+Project: Mamluk vs Knight
+Author: Abdalrahman Shaath
+
+Summary: Mamluk vs Knight is a two-player text-based strategy game. Essentially, one player 
+plays the Mamluks, and another plays the Knights. The Knights have a higher defense, while the
+Mamluks have the higher attack. Each player is trying to defeat the other players armies. 
+
+How to Play:
+	* Players need to decide who gets to play the Knights, while who gets to play the Mamluks. 
+	Each of these soldier types have different percs. Both classes of soldiers have 100 health. The
+	Knights have a defense of 30, while an attack of 20. The Mamluks have a defense of 10, while an
+	attack of 40. How these values come in to play will be explained later on, however, all you need 
+	to keep in mind for now is that Knights have a higher defense, while the Mamluks have a higher
+	attack. 
+	
+	* Each player gets 50 solders, and needs to use those soldiers to assemble 5 armies. How many
+	soldiers per army is up to the player. Each player also gets to name the field marshal and name of
+	each army.
+	
+	* Once all the armies are assembled the attack phase begins. The attack phase is basically where
+	the armies attack each other. A single soldier can only attack another soldier, not more. I
+	will illustrate this with a point. In a 5v5 match, 5 soldiers of one army will attack the 
+	5 soldiers of the other army. In a 5v3 match, the 3 soldiers in one army can only attack 3
+	soldiers in the other army. 
+	
+	* In a fight between two armies, there are two different types of attacks, their is a "direct
+	attack", and "shield attack". The direct attack is the desired attack, this is because a direct
+	attack directly lowers the health of the opposing the soldier. A shielded attack is less 
+	desirable because before the attack is used against the health of a soldier, it first has to
+	be subtracted from the defense, therein becoming a smaller attack. I'll further explain this
+	point with a example. Let's say a Mamluk soldier attacks a soldier directly, the health of 
+	that Knight will become 60 (100-40). However, in a shielded attack, the Knight will have a
+	health of 90, this is because the 40 attack of the Mamluk will be subtracted by 30 (the defense
+	of the knight), becoming an attack of 10, so the health of the Knight will be 90 (100-10).
+	
+	* This begs the question, why would you ever use a shielder attack? The answer is pretty simple,
+	it isn't up to you, it's up to chance. In a normal attack phase, each soldier has a 50% chance
+	of landing a direct hit. That is unless you use an Ace. Each army has 3 Aces. If you use an
+	Ace, the chance of a direct attack is 83%. But, as mentioned before, each army only has 3.
+	
+	* In order for an army to die, the field marshal must be killed. Once an army is dead, it can't
+	attack. However, if there are soldiers with a health greater than 0 from a dead army, the army in
+	the next attack phase will take those remaining soldiers. Aces can't be carried over 
+	
+	* Once a player's 5 field marshals are dead, he/she will lose the game. That's basically how
+	the game works. The strategy of the game is deciding how much soldiers you want to put per army,
+	and when you want to use your Aces. The rest is up to lady luck. 
+
+How the Code Works, as of (7/18/2021):
+	* The main chunk of code is in the GenericArmy.java class. This class has all the
+	inner workings of an army. This code is heavily based on a linked-list, just with different names.
+	To put it simply, a soldier is like a node, and the army is a linked list. This class was made
+	abstract to prevent it from being instanced as a normal army. This class is then extended two the
+	two army classes, the Mamluk and Knight. Those classes are pretty simple, they mainly just 
+	super back to the super-class. The Mamluk and Knight classes are pretty much the same, the
+	only difference is the values they input for the attack and defense. There is then the 
+	TestBattleField.java class which is meant to be a place to test out new features. 
+	
+	* There is then the the Multiplayer.java file which uses the Mamluk and Knight 
+	classes to allow two players to play against each other. The creation of a "campaign" is 
+	expected to be developed in the future.
+	
+	--- Files ----> GenericArmy.java, Mamluk.java, Knight.java, TestBattleField.java,
+					Multiplayer.java
+
+Testing Help, as of (7/24/2021)
+	* Here are some test answers for the questions in the game, this is to test new features
+	1 - no
+	2 - Saladin, Khalid, Faisal, Qutuz, Baibars
+	3 - Army one, Army two, Army three, Army four, Army five
+	4 - 10 10 10 10 10
+	5 - Richard the LionHeart, Louis IX of France, Constantine the Great, Justinian I, Charlemagne
+	6 - Army unus, Army duo, Army tribus, Army quattuor, Army quinque
+	7 - 10 10 10 10 10
+	
+	
