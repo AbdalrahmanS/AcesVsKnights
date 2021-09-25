@@ -1,6 +1,6 @@
 /*
  * Project: Mamluk V Knight
- * Author: Abdalrahman Shaath
+ * Author: github.com/AbdalrahmanS
  * Last edited: 7/19/2021
  * Brief Description: This class is just an error class
  */
