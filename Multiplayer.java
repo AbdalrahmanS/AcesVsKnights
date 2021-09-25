@@ -1,6 +1,6 @@
 /*
  * Project: Mamluk V Knight
- * Author: Abdalrahman Shaath
+ * Author: github.com/AbdalrahmanS
  * Last edited: 7/16/2021
  * Brief Description: This class is where all the classes come together to make the multiplier game.
  * Extra Resources: GeneralInfo.txt, GenericArmy.java, Knight.java, Mamluk.java
