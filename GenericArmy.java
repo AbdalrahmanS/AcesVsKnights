@@ -1,6 +1,6 @@
 /*
  * Project: Mamluk V Knight
- * Author: Abdalrahman Shaath
+ * Author: github.com/AbdalrahmanS
  * Last edited: 7/15/2021
  * Brief Description: It's important that your read the GeneralInfo.txt file to get a general
  * view of the game, before diving into the code. 
