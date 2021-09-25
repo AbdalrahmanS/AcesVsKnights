@@ -1,6 +1,6 @@
 /*
  * Project: Mamluk V Knight
- * Author: Abdalrahman Shaath
+ * Author: github.com/AbdalrahmanS
  * Last edited: 7/16/2021
  * Brief Description: This class is very simple, it just extends the GenericArmy method.
  * It mainly just  sets the attack, defense, and health for this type of attacker.
